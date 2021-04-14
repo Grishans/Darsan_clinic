@@ -91,6 +91,28 @@ $(".portfolioSlider__current").slick({
     },
   ],
 });
+$(".sevices_slider").slick({
+  infinite: false,
+  slidesToShow: 3.5,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  // draggable: true,
+  swipe: true,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
 ///Slider
 
 // Portfolio slider animation
@@ -115,13 +137,39 @@ for (let i = 0; i < portfSlides.length; i++) {
 let portfSliderCurrentImg = document.querySelectorAll(
   ".portfolioSlider__current > .slick-list > .slick-track > .slick-slide > img"
 );
-let allImg = document.querySelectorAll("img");
+let saleSliderCurrentImg = document.querySelectorAll(
+  ".saleSlider > .slick-list > .slick-track > .slick-slide > img"
+);
+let sevicesSliderCurrentImg = document.querySelectorAll(
+  ".servicesSlide__wrap > img"
+);
 document.addEventListener("DOMContentLoaded", () => {
-  for (let i = 5; i < portfSliderCurrentImg.length; i++) {
-    // с 5, чтоб пропустить картинки шапки
-    // portfSliderCurrent[i].getAttribute('data-src')
+  for (let i = 0; i < portfSliderCurrentImg.length; i++) {
     let intermediate = portfSliderCurrentImg[i].getAttribute("data-src");
     portfSliderCurrentImg[i].setAttribute("src", intermediate);
   }
+
+  for (let i = 0; i < saleSliderCurrentImg.length; i++) {
+    let intermediate = saleSliderCurrentImg[i].getAttribute("data-src");
+    saleSliderCurrentImg[i].setAttribute("src", intermediate);
+  }
+  for (let i = 0; i < sevicesSliderCurrentImg.length; i++) {
+    let intermediate = sevicesSliderCurrentImg[i].getAttribute("data-src");
+    sevicesSliderCurrentImg[i].setAttribute("src", intermediate);
+  }
 });
 ///Preloader
+
+//Sevices
+let servicesSlide__wrap = document.querySelectorAll(".servicesSlide__wrap");
+let servicesHover = document.querySelectorAll(".servicesSlide__Hovercontent");
+
+for (let i = 0; i < servicesSlide__wrap.length; i++) {
+  servicesSlide__wrap[i].addEventListener("mouseover", () => {
+    servicesHover[i].style.height = 40 + "%";
+  });
+  servicesSlide__wrap[i].addEventListener("mouseout", () => {
+    servicesHover[i].style.height = 0;
+  });
+}
+///Sevices

@@ -146,6 +146,18 @@ img.mainScreen__bg {
   height: 100%;
   background: var(--blue);
 }
+.generalTitle__solid_red {
+  background: var(--red);
+}
+.generalTitle__solid_red h1 {
+  color: #fff;
+}
+.generalTitle__solid_blue {
+  background: var(--blue);
+}
+.generalTitle__solid_blue h1 {
+  color: #fff;
+}
 
 /*Slider*/
 .btn {
@@ -242,7 +254,57 @@ ul.slick-dots li.slick-active button {
 .portfolioSlider ul.slick-dots li.slick-active button {
   color: var(--red);
 }
+
 /*/Portfolio/*/
+.generalTitle__sale {
+  margin: 140px 0;
+}
+/*Services*/
+.generalTitle__solid_blue {
+  margin-bottom: 56px;
+}
+.sevices_slider .slick-slide {
+  outline: 0;
+}
+.services__wrap {
+  margin-right: 0;
+}
+.servicesSlide__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2.5%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.36));
+}
+.servicesSlide__wrap img {
+  width: 100%;
+}
+.servicesSlide__Hovercontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  transition: 0.3s;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+.servicesSlide__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  background: #fff;
+}
+/*/Services/*/
 /* Adaptation */
 
 @media (max-width: 1300px) {
