@@ -25,15 +25,15 @@ $(".saleSlider").slick({
     },
   ],
 });
-
-$(".portfolioSlider__current").on("init", function (event, slick) {
+$(".portfolioSlider").on("init", function (event, slick) {
   var dots = $(".portfolioSlider .slick-dots li");
   dots.each(function (k, v) {
     $(this)
       .find("button")
       .addClass("heading" + k);
   });
-  var items = $(".portfolioSlider__current");
+
+  var items = $(".portfolioSlider__current-for");
   items.each(function (k, v) {
     // var text = $(this).find("span").text();
     var text = $(this).attr("data-name");
@@ -41,7 +41,6 @@ $(".portfolioSlider__current").on("init", function (event, slick) {
     $(".heading" + k).text(text);
   });
 });
-
 $(".portfolioSlider").slick({
   infinite: false,
   slidesToShow: 1,
@@ -64,16 +63,39 @@ $(".portfolioSlider").slick({
     },
   ],
 });
-
-$(".portfolioSlider__current").slick({
+$(".portfolioSlider__current-for").slick({
   infinite: false,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  arrow: false,
+  arrows: false,
   draggable: false,
   swipe: false,
   dots: false,
+  asNavFor: ".portfolioSlider__current-nav",
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+$(".portfolioSlider__current-nav").slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  draggable: false,
+  swipe: false,
+  dots: false,
+  asNavFor: ".portfolioSlider__current-for",
+  focusOnSelect: true,
   prevArrow:
     "<button id='prev' type='button' class='btn btnPrev'><img src='img/slider/arr_left.svg' alt=''></button>",
   nextArrow:
@@ -97,7 +119,7 @@ $(".sevices_slider").slick({
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: false,
-  // draggable: true,
+  focusOnSelect: true,
   swipe: true,
   dots: false,
   responsive: [
@@ -134,8 +156,11 @@ for (let i = 0; i < portfSlides.length; i++) {
 /// Portfolio slider animation
 
 //Preloader
-let portfSliderCurrentImg = document.querySelectorAll(
-  ".portfolioSlider__current > .slick-list > .slick-track > .slick-slide > img"
+let portfSliderCurrentImgFor = document.querySelectorAll(
+  ".portfolioSlider__current-for > .slick-list > .slick-track > .slick-slide > img"
+);
+let portfSliderCurrentImgNav = document.querySelectorAll(
+  ".portfolioSlider__current-nav > .slick-list > .slick-track > .slick-slide > img"
 );
 let saleSliderCurrentImg = document.querySelectorAll(
   ".saleSlider > .slick-list > .slick-track > .slick-slide > img"
@@ -144,11 +169,14 @@ let sevicesSliderCurrentImg = document.querySelectorAll(
   ".servicesSlide__wrap > img"
 );
 document.addEventListener("DOMContentLoaded", () => {
-  for (let i = 0; i < portfSliderCurrentImg.length; i++) {
-    let intermediate = portfSliderCurrentImg[i].getAttribute("data-src");
-    portfSliderCurrentImg[i].setAttribute("src", intermediate);
+  for (let i = 0; i < portfSliderCurrentImgFor.length; i++) {
+    let intermediate = portfSliderCurrentImgFor[i].getAttribute("data-src");
+    portfSliderCurrentImgFor[i].setAttribute("src", intermediate);
   }
-
+  for (let i = 0; i < portfSliderCurrentImgNav.length; i++) {
+    let intermediate = portfSliderCurrentImgNav[i].getAttribute("data-src");
+    portfSliderCurrentImgNav[i].setAttribute("src", intermediate);
+  }
   for (let i = 0; i < saleSliderCurrentImg.length; i++) {
     let intermediate = saleSliderCurrentImg[i].getAttribute("data-src");
     saleSliderCurrentImg[i].setAttribute("src", intermediate);
@@ -157,6 +185,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let intermediate = sevicesSliderCurrentImg[i].getAttribute("data-src");
     sevicesSliderCurrentImg[i].setAttribute("src", intermediate);
   }
+
+  setTimeout(() => {
+    document.querySelector("button[class=heading0]").click();
+    window.scrollTo(0, 0);
+  }, 300);
 });
 ///Preloader
 

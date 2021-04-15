@@ -256,6 +256,12 @@ ul.slick-dots li.slick-active button {
 }
 
 /*/Portfolio/*/
+.generalTitlePortfolio {
+  margin-bottom: 80px;
+}
+.portfolio__wrap {
+  margin: 0 15%;
+}
 .generalTitle__sale {
   margin: 140px 0;
 }
@@ -304,6 +310,28 @@ ul.slick-dots li.slick-active button {
   height: 130px;
   background: #fff;
 }
+.portfolioSlider ul.slick-dots {
+  position: absolute;
+  top: -8%;
+  left: 0;
+  width: 100%;
+}
+.portfolioSlider__current-for {
+  margin-bottom: 35px;
+}
+.portfolioSlider__current-nav .slick-slide,
+.portfolioSlider__current-for .slick-slide {
+  outline: none;
+}
+.portfolioSlider__current-nav .slick-slide img {
+  width: 98%;
+  border: 2px solid transparent;
+}
+.portfolioSlider__current-nav .slick-current img {
+  transition: 0.3s;
+  border: 2px solid var(--red);
+}
+
 /*/Services/*/
 /* Adaptation */
 
