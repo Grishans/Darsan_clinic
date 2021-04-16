@@ -310,6 +310,72 @@ ul.slick-dots li.slick-active button {
   height: 130px;
   background: #fff;
 }
+.servicesDropdown {
+  position: relative;
+  width: 80%;
+  height: 50px;
+}
+.servicesDropdown::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.servicesDropdown input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+ul.sevices__dropDown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #000000;
+  border-top-color: #c4c4c4;
+  box-sizing: border-box;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.3s;
+
+  opacity: 0;
+}
+ul.sevices__dropDown::-webkit-scrollbar {
+  width: 4px;
+}
+ul.sevices__dropDown::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+}
+ul.sevices__dropDown li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  height: 25%;
+  padding: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  padding-left: 5%;
+}
+ul.sevices__dropDown li:hover {
+  background: #c4c4c4;
+}
 .portfolioSlider ul.slick-dots {
   position: absolute;
   top: -8%;
