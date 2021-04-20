@@ -285,6 +285,10 @@ ul.slick-dots li.slick-active button {
 .servicesSlide__wrap img {
   width: 100%;
 }
+.sevices__img__block {
+  position: relative;
+  z-index: 0;
+}
 .servicesSlide__Hovercontent {
   display: flex;
   flex-direction: column;
@@ -353,8 +357,8 @@ ul.sevices__dropDown {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
   transition: 0.3s;
-
   opacity: 0;
+  z-index: 1;
 }
 ul.sevices__dropDown::-webkit-scrollbar {
   width: 4px;
