@@ -115,11 +115,31 @@ $(".portfolioSlider__current-nav").slick({
 });
 $(".sevices_slider").slick({
   infinite: false,
-  slidesToShow: 3.5,
+  slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: false,
-  // focusOnSelect: true,
+  swipe: false,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+$(".scs__slider").slick({
+  infinite: false,
+  slidesToShow: 1.5,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
   swipe: true,
   dots: false,
   responsive: [

@@ -15,9 +15,6 @@
   <body>
     <header>
       <div class="header__wrap">
-        <div class="header__logo">
-          <img src="img/logo.png" alt="" />
-        </div>
         <nav>
           <span>Услуги</span>
           <span>Акции</span>
@@ -25,13 +22,24 @@
           <span>Портфолио</span>
           <span>Отзывы</span>
         </nav>
-        <div class="header__sn">
-          <a href="#"><img src="img/vk.png" alt="" /></a>
-          <a href="#"><img src="img/fb.png" alt="" /></a>
-          <a href="#"><img src="img/inst.png" alt="" /></a>
+        <div class="header__logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="header__place">
+          <div class="header__place__block">
+            <img src="img/header__target.svg" alt="" />
+            <p>Ул. Розы Люксембург, 32</p>
+          </div>
+          <div class="header__place__block">
+            <img src="img/header__phone.svg" alt="" />
+            <div class="header__place__phones">
+              <p>+380715138489</p>
+              <p>+380715138489</p>
+            </div>
+          </div>
         </div>
       </div>
-      <img class="header__bg" src="img/header__bg.png" alt="" />
+      <img class="header__bg" src="img/header__bg.svg" alt="" />
     </header>
 
     <section class="mainScreen">
@@ -48,7 +56,7 @@
       <img src="img/Darsan.jpg" alt="" class="mainScreen__bg" />
     </section>
 
-    <div class="generalTitle generalTitle__solid_blue">
+    <div class="generalTitle generalTitle_left">
       <h1>Услуги</h1>
     </div>
 
@@ -56,150 +64,49 @@
       <div class="general__wrap services__wrap">
         <div class="sevices_slider">
           <div>
-            <div class="servicesSlide__wrap">
-              <div class="servicesSlide__text">
-                <h4>Массаж</h4>
-                <div class="servicesDropdown">
-                  <input type="text" readonly>
-                  <ul class="sevices__dropDown">
-                    <li>Классический массаж</li>
-                    <li>Лечебный массаж</li>
-                    <li>Тайский массаж</li>
-                    <li>Периостальный массаж</li>
-                    <li>Тайный массаж</li>
-                  </ul>
+            <div class="sevices_current__slide">
+              <div class="scs__description">
+                <div class="scsd__title">
+                  <h3>Лечебный массаж</h3>
+                </div>
+                <div class="scsd__dropdown">
+                  <input type="text" value="Детский массаж" readonly />
+                </div>
+                <div class="scsd__timeANDprice">
+                  <div class="scsd__time">
+                    <img src="img/clock.svg" alt="" />
+                    <p>60 мин</p>
+                  </div>
+                  <div class="scsd__price">
+                    <p>2999 руб</p>
+                  </div>
+                </div>
+                <div class="scsd__description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ligula ex, eleifend quis facilisis aliquet,
+                    tristique suscipit lorem. Nulla fringilla,
+                  </p>
+                </div>
+                <div class="scsd__btn">
+                  <span>Записаться на прием</span>
                 </div>
               </div>
-              <div class="sevices__img">
-                <div class="sevices__img__block">
-                  <img src="img/preloader.svg" data-src="img/serv.jpg" alt="" />
-                  <div class="servicesSlide__Hovercontent">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Curabitur ligula ex, eleifend quis facilisis aliquet,
-                      tristique suscipit lorem. Nulla fringilla,
-                    </p>
-                    <label class="MainBtn">Записаться</label>
+              <div class="scs__slider">
+                <div>
+                  <div class="scs__slide__current">
+                    <img src="img/service__test.png" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <div class="scs__slide__current">
+                    <img src="img/service__test.png" alt="" />
                   </div>
                 </div>
               </div>
-              <div class="servicesSlide__Hovercontent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ligula ex, eleifend quis facilisis aliquet,
-                  tristique suscipit lorem. Nulla fringilla,
-                </p>
-                <label class="MainBtn">Записаться</label>
-              </div>
             </div>
           </div>
-          <div>
-            <div class="servicesSlide__wrap">
-              <div class="servicesSlide__text">
-                <h4>Массаж</h4>
-                <div class="servicesDropdown">
-                  <input type="text" readonly>
-                  <ul class="sevices__dropDown">
-                    <li>Неклассический массаж</li>
-                    <li>Лечебный массаж</li>
-                    <li>Тайский массаж</li>
-                    <li>Периостальный массаж</li>
-                    <li>Тайный массаж</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="sevices__img">
-                <div class="sevices__img__block">
-                  <img src="img/preloader.svg" data-src="img/serv.jpg" alt="" />
-                  <div class="servicesSlide__Hovercontent">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <label class="MainBtn">Записаться</label>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div>
-            <div class="servicesSlide__wrap">
-              <div class="servicesSlide__text">
-                <h4>Массаж</h4>
-                <div class="servicesDropdown">
-                  <input type="text" readonly>
-                  <ul class="sevices__dropDown">
-                    <li>Классический массаж</li>
-                    <li>Лечебный массаж</li>
-                    <li>Тайский массаж</li>
-                    <li>Периостальный массаж</li>
-                    <li>Тайный массаж</li>
-                  </ul>
-                </div>
-              </div>
-              <img src="img/preloader.svg" data-src="img/serv.jpg" alt="" />
-              <div class="servicesSlide__Hovercontent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ligula ex, eleifend quis facilisis aliquet,
-                  tristique suscipit lorem. Nulla fringilla,
-                </p>
-                <label class="MainBtn">Записаться</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="servicesSlide__wrap">
-              <div class="servicesSlide__text">
-                <h4>Массаж</h4>
-                <div class="servicesDropdown">
-                  <input type="text" readonly>
-                  <ul class="sevices__dropDown">
-                    <li>Классический массаж</li>
-                    <li>Лечебный массаж</li>
-                    <li>Тайский массаж</li>
-                    <li>Периостальный массаж</li>
-                    <li>Тайный массаж</li>
-                  </ul>
-                </div>
-              </div>
-              <img src="img/preloader.svg" data-src="img/serv.jpg" alt="" />
-              <div class="servicesSlide__Hovercontent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ligula ex, eleifend quis facilisis aliquet,
-                  tristique suscipit lorem. Nulla fringilla,
-                </p>
-                <label class="MainBtn">Записаться</label>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="servicesSlide__wrap">
-              <div class="servicesSlide__text">
-                <h4>Массаж</h4>
-                <div class="servicesDropdown">
-                  <input type="text" readonly>
-                  <ul class="sevices__dropDown">
-                    <li>Классический массаж</li>
-                    <li>Лечебный массаж</li>
-                    <li>Тайский массаж</li>
-                    <li>Периостальный массаж</li>
-                    <li>Тайный массаж</li>
-                  </ul>
-                </div>
-              </div>
-              <img src="img/preloader.svg" data-src="img/serv.jpg" alt="" />
-              <div class="servicesSlide__Hovercontent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur ligula ex, eleifend quis facilisis aliquet,
-                  tristique suscipit lorem. Nulla fringilla,
-                </p>
-                <label class="MainBtn">Записаться</label>
-              </div>
-            </div>
-          </div>
+          <div></div>
         </div>
       </div>
     </section>
@@ -264,264 +171,265 @@
 
     <section class="portfolio">
       <div class="general__wrap portfolio__wrap">
-          <div class="portfolio__slider__wrap">
-            <div class="portfolioSlider">
-              <!-- Тут слайдер в слайдере, названия (маникюр, педикюр ...) это data-name, который вешается на каждый внутренний слайдер, внутри глобального-->
-              <div>
-                <div class="portfolioSlider__current-for" data-name="Педикюр">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan2.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+        <div class="portfolio__slider__wrap">
+          <div class="portfolioSlider">
+            <!-- Тут слайдер в слайдере, названия (маникюр, педикюр ...) это data-name, который вешается на каждый внутренний слайдер, внутри глобального-->
+            <div>
+              <div class="portfolioSlider__current-for" data-name="Педикюр">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="portfolioSlider__current-nav">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan2.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan2.jpg"
+                    alt=""
+                  />
                 </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioSlider__current-nav">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-              <div>
-                <div class="portfolioSlider__current-for" data-name="Маникюр">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+            <div>
+              <div class="portfolioSlider__current-for" data-name="Маникюр">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="portfolioSlider__current-nav">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioSlider__current-nav">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-              <div>
-                <div class="portfolioSlider__current-for" data-name="Педикюр">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+            <div>
+              <div class="portfolioSlider__current-for" data-name="Педикюр">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="portfolioSlider__current-nav">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioSlider__current-nav">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-              <div>
-                <div class="portfolioSlider__current-for" data-name="Педикюр">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+            <div>
+              <div class="portfolioSlider__current-for" data-name="Педикюр">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="portfolioSlider__current-nav">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioSlider__current-nav">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-              <div>
-                <div class="portfolioSlider__current-for" data-name="Педикюр">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+            <div>
+              <div class="portfolioSlider__current-for" data-name="Педикюр">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="portfolioSlider__current-nav">
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="img/preloader.svg"
-                      data-src="img/Darsan.jpg"
-                      alt=""
-                    />
-                  </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
                 </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="portfolioSlider__current-nav">
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="img/preloader.svg"
+                    data-src="img/Darsan.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
