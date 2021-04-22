@@ -47,6 +47,58 @@ label {
   padding: 0;
 }
 /* Header */
+/* header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+img.header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  z-index: 1;
+  transform: translateY(40px);
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+nav span {
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header__place {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+.header__place__block {
+  display: flex;
+  align-items: center;
+}
+.header__place__block img {
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+.header__place__phones p {
+  padding: 5px 0;
+} */
 header {
   position: relative;
   display: flex;
@@ -224,6 +276,151 @@ ul.slick-dots li.slick-active button {
 }
 /*/Slider/*/
 
+/*Services*/
+.servicesDots {
+  width: 100%;
+  height: fit-content;
+}
+a.servisec__main_nav {
+  color: #626262;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.generalTitle__solid_blue {
+  margin-bottom: 56px;
+}
+.sevices_slider .slick-slide {
+  outline: 0;
+}
+section.services {
+  background: rgb(207, 207, 207);
+}
+.services__wrap {
+  margin: 0 0 0 15%;
+}
+.sevices_current__slide {
+  display: flex;
+  justify-content: space-between;
+}
+.scs__description {
+  width: 40%;
+}
+.scs__slider {
+  width: 40%;
+}
+.scsd__title {
+  margin-bottom: 70px;
+}
+.scsd__title h3 {
+  font-size: 48px;
+}
+.scsd__dropdown {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.scsd__dropdown input {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.scsd__timeANDprice {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.scsd__time img {
+  margin-right: 15px;
+}
+.scsd__price p {
+  font-weight: 600;
+}
+.scsd__time {
+  display: flex;
+}
+.scsd__description {
+  width: 70%;
+  margin-bottom: 30px;
+}
+.scsd__btn {
+  width: 200px;
+  height: 55px;
+  background: #fff;
+  border: 2px solid #fd0000;
+  border-radius: 4px;
+}
+.scsd__btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sevices__drop__slider ul.slick-dots {
+  position: absolute;
+  top: 46.8%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: #fff;
+  width: 24.3%;
+  height: 0px;
+  border: 1px solid #d9d9d9;
+  margin: 0;
+  transition: 0.3s;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  max-height: 100px;
+}
+.sevices__drop__slider ul.slick-dots li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sevices__drop__slider ul.slick-dots li:hover {
+  background: #d9d9d9;
+}
+.scs__slide__current {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  width: 440px;
+  height: 440px;
+}
+.scs__slide__current img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.scs__slider .slick-current .scs__slide__current img {
+  width: 440px;
+  height: 440px;
+}
+.service_drop_dots ul {
+  flex-direction: column;
+}
+.service_drop_dots ul li a {
+  cursor: pointer;
+}
+/*/Services/*/
+
 /*Portfolio*/
 .portfolioSlider__current {
   transition: 0.4s;
@@ -255,45 +452,7 @@ ul.slick-dots li.slick-active button {
 .generalTitle__sale {
   margin: 140px 0;
 }
-/*Services*/
-.generalTitle__solid_blue {
-  margin-bottom: 56px;
-}
-.sevices_slider .slick-slide {
-  outline: 0;
-}
-.services__wrap {
-  margin-right: 0;
-}
-.scs__description {
-  width: 60%;
-}
-.scs__slider {
-  width: 40%;
-}
-.sevices_current__slide {
-  display: flex;
-}
-.scsd__timeANDprice {
-  display: flex;
-}
-.scsd__time {
-  display: flex;
-}
-.scsd__btn span {
-  color: #3b503d;
-}
-.scs__slide__current {
-  width: 440px;
-  height: 440px;
-}
-.scs__slide__current img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-/*/Services/*/
+
 /* Adaptation */
 
 @media (max-width: 1300px) {

@@ -118,9 +118,46 @@ $(".sevices_slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
   arrows: false,
   swipe: false,
   dots: true,
+  appendDots: $(".servicesDots"),
+  customPaging: function (slider, i) {
+    var title = $(slider.$slides[i]).data("title");
+    return '<a class="servisec__main_nav"> ' + title + " </a>";
+  },
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+$(".sevices__drop__slider").slick({
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
+  arrows: false,
+  swipe: false,
+  dots: true,
+  // appendDots: $(".service_drop_dots"),
+  customPaging: function (slider, i) {
+    var titles = $(slider.$slides[i]).data("titledrop");
+    return '<a class="servisec__drop_nav"> ' + titles + " </a>";
+  },
   responsive: [
     {
       breakpoint: 600,
@@ -136,7 +173,7 @@ $(".sevices_slider").slick({
 });
 $(".scs__slider").slick({
   infinite: false,
-  slidesToShow: 1.5,
+  slidesToShow: 1.3,
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: false,
