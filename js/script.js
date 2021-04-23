@@ -153,7 +153,6 @@ $(".sevices__drop__slider").slick({
   arrows: false,
   swipe: false,
   dots: true,
-  // appendDots: $(".service_drop_dots"),
   customPaging: function (slider, i) {
     var titles = $(slider.$slides[i]).data("titledrop");
     return '<a class="servisec__drop_nav"> ' + titles + " </a>";

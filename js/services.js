@@ -3,6 +3,7 @@ let dropUL = document.querySelectorAll(".sevices__drop__slider > .slick-dots");
 let dropLI = document.querySelectorAll(
   ".sevices__drop__slider > .slick-dots > li"
 );
+let services_wrap = document.querySelectorAll(".general__wrap services__wrap");
 let dropToogle = false;
 
 for (let i = 0; i < drop.length; i++) {
@@ -10,14 +11,11 @@ for (let i = 0; i < drop.length; i++) {
     for (let j = 0; j < dropUL.length; j++) {
       if (dropToogle) {
         dropUL[j].style.height = 0;
-        dropToogle = !dropToogle;
-        return 0;
       } else {
         dropUL[j].style.height = "unset";
-        dropToogle = !dropToogle;
-        return 0;
       }
     }
+    dropToogle = !dropToogle;
   });
 }
 for (let g = 0; g < dropLI.length; g++) {
