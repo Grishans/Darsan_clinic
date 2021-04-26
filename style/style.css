@@ -205,6 +205,8 @@ img.mainScreen__bg {
 .btn {
   position: absolute;
   top: 43%;
+  width: 100px;
+  height: 100px;
   z-index: 9;
   cursor: pointer;
   outline: none;
@@ -227,52 +229,6 @@ img.mainScreen__bg {
 }
 .general__wrap {
   margin: 0 5%;
-}
-.saleSlider img {
-  width: 98%;
-  border-radius: 20px;
-  /* box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 17px; */
-  filter: drop-shadow(0px 3px 17px rgba(0, 0, 0, 0.36));
-}
-.saleSlider img:hover + .saleSlider__text {
-  opacity: 1;
-}
-.saleSlider .slick-slide {
-  outline: none;
-  position: relative;
-}
-.saleSlider__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 98%;
-  height: 40%;
-  background: linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  padding: 0 10%;
-  box-sizing: border-box;
-  opacity: 0;
-  transition: 0.3s;
-}
-ul.slick-dots {
-  display: flex !important;
-  list-style-type: none;
-}
-ul.slick-dots li button {
-  border-radius: 50%;
-  background: #c4c4c4;
-  font-size: 0;
-  border: none;
-  outline: none;
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  margin-right: 20px;
-}
-ul.slick-dots li.slick-active button {
-  background: #000;
 }
 /*/Slider/*/
 
@@ -427,6 +383,13 @@ section.services {
 }
 .portfolioSlider img {
   width: 100%;
+  margin: 0 auto;
+}
+.portfolioSlider__current-nav .slick-list .slick-slide {
+  margin: 10px;
+}
+.portfolioSlider__current-for {
+  margin-bottom: 20px;
 }
 .portfolioSlider__current img {
   width: 98%;
@@ -441,6 +404,10 @@ section.services {
 .portfolioSlider ul.slick-dots li.slick-active button {
   color: var(--red);
 }
+.portfolioSlider ul.slick-dots {
+  position: absolute;
+  top: 0;
+}
 
 /*/Portfolio/*/
 .generalTitlePortfolio {
@@ -449,11 +416,67 @@ section.services {
 .portfolio__wrap {
   margin: 0 15%;
 }
-.generalTitle__sale {
-  margin: 140px 0;
-}
-
 /* Adaptation */
+
+/*Sale*/
+.saleSlider .slick-list img {
+  width: 98%;
+  border-radius: 100px 0px;
+}
+.saleSlider .slick-slide {
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.saleSlider .slick-dots li.slick-active button {
+  background: #fd0000;
+}
+.saleSlider .slick-dots {
+  position: absolute;
+  top: -15%;
+  right: 20%;
+}
+.saleSlider__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  height: 50%;
+  background: linear-gradient(360deg, #a58677 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 0 10%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-radius: 100px 0px;
+}
+ul.slick-dots {
+  display: flex !important;
+  list-style-type: none;
+}
+ul.slick-dots li button {
+  border-radius: 50%;
+  background: #c4c4c4;
+  font-size: 0;
+  border: none;
+  outline: none;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-right: 20px;
+}
+.saleSlider .btn {
+  top: unset;
+  bottom: -35%;
+}
+.saleSlider .btnPrev {
+  left: 40%;
+}
+.saleSlider .btnNext {
+  right: 40%;
+}
+/*/Sale/*/
 
 @media (max-width: 1300px) {
   .courses__box span {

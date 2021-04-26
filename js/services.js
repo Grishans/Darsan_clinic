@@ -3,7 +3,9 @@ let dropUL = document.querySelectorAll(".sevices__drop__slider > .slick-dots");
 let dropLI = document.querySelectorAll(
   ".sevices__drop__slider > .slick-dots > li"
 );
-let services_wrap = document.querySelectorAll(".general__wrap services__wrap");
+let services_wrap = document.querySelectorAll(".services__wrap");
+let MainSlides = document.querySelectorAll(".servisec__main_nav");
+
 let dropToogle = false;
 
 for (let i = 0; i < drop.length; i++) {
@@ -26,3 +28,10 @@ for (let g = 0; g < dropLI.length; g++) {
     dropToogle = !dropToogle;
   });
 }
+
+// function adaptWrapHight(target){
+  
+//   console.log(target.offsetHeight);
+//   services_wrap.style.height = 
+  
+// }
