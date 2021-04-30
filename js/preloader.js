@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
     servicesSliderCurrentImg[i].setAttribute("src", intermediate);
   }
 
-  setTimeout(() => {
-    document.querySelector("button[class=heading0]").click();
-    window.scrollTo(0, 0);
-  }, 300);
+  // setTimeout(() => {
+  //   document.querySelector("button[class=heading0]").click();
+  //   window.scrollTo(0, 0);
+  // }, 300);
 });
 ///Preloader

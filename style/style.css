@@ -307,14 +307,20 @@ section.services {
   width: 70%;
   margin-bottom: 30px;
 }
-.scsd__btn {
+.mainBTN {
   width: 200px;
   height: 55px;
   background: #fff;
   border: 2px solid #fd0000;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
 }
-.scsd__btn span {
+.mainBTN span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,8 +391,20 @@ section.services {
   width: 100%;
   margin: 0 auto;
 }
+.portfolioSlider__current-nav {
+  margin-bottom: 100px;
+}
 .portfolioSlider__current-nav .slick-list .slick-slide {
   margin: 10px;
+}
+.portfolioSlider__current-nav button.btn {
+  top: 105%;
+}
+.portfolioSlider__current-nav button.btnPrev {
+  left: 35%;
+}
+.portfolioSlider__current-nav button.btnNext {
+  right: 35%;
 }
 .portfolioSlider__current-for {
   margin-bottom: 20px;
@@ -408,8 +426,117 @@ section.services {
   position: absolute;
   top: 0;
 }
-
+.portfolioDots__wrap {
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 5;
+}
+.portfolioDots {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.portfolioDots__wrap h2 {
+  font-size: 48px;
+  color: #9f9a8e;
+  margin: 0;
+  margin-right: 10%;
+}
+.portfolioDots__wrap .portfolioDots__drop {
+  position: relative;
+  width: 32%;
+  height: 35px;
+}
+input.portfolio__dropInput {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0;
+}
+.portfolioDots__drop::after {
+  content: url(../img/inputArrDown.svg);
+  position: absolute;
+  display: block;
+  right: 3%;
+  top: 35%;
+  width: 15px;
+  height: 15px;
+}
+.portfolioDots__dropUp::after {
+  content: url(../img/inputArrUp.svg);
+  position: absolute;
+  display: block;
+  right: 3%;
+  top: 35%;
+  width: 15px;
+  height: 15px;
+}
+.portfolioDots {
+  width: 100%;
+  height: 0;
+  transition: 0.3s;
+}
+.portfolioDots ul.slick-dots {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow-y: scroll;
+  transition: 0.3s;
+}
+.portfolioDots ul.slick-dots::-webkit-scrollbar {
+  width: 4px;
+  background: #fd0000;
+}
+.portfolioDots ul.slick-dots li {
+  display: block;
+}
+.portfolioDots ul.slick-dots li a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 35px;
+}
+.portfolioDots ul.slick-dots li a:hover {
+  background: #a79e8b;
+}
+.portfolioSlideCount {
+  display: flex;
+  justify-content: flex-end;
+  width: 7%;
+  float: right;
+}
+.portfolioSlideCount span {
+  font-size: 18px;
+}
+.portfolioSlideCount hr {
+  width: 70%;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /*/Portfolio/*/
+
 .generalTitlePortfolio {
   margin-bottom: 80px;
 }
@@ -477,6 +604,170 @@ ul.slick-dots li button {
   right: 40%;
 }
 /*/Sale/*/
+
+/*About*/
+section.about {
+  width: 100%;
+}
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about__about {
+  display: flex;
+  width: 100%;
+}
+.about__img {
+  width: 35%;
+}
+.about__img img {
+  width: 100%;
+  border-radius: 70px 70px 70px 0px;
+}
+.about__text {
+  width: 35%;
+  margin-left: 2%;
+}
+.about__text__title {
+  margin-bottom: 30px;
+}
+.about__text__title h3 {
+  font-weight: 600;
+}
+.about__text__description {
+  margin-bottom: 30px;
+}
+.about__text__description {
+  padding-left: 1%;
+  box-sizing: border-box;
+}
+.about__text__sn {
+  display: flex;
+  padding-left: 1%;
+}
+.about__text__sn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fd0000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.about__text__sn a img {
+  width: 55%;
+  height: 55%;
+}
+
+.about__advantages {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.aboutAdv__icon {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+.aboutAdv__icon__icons {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutAdv__icon__icons__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutAdv__icon__icons__block img {
+  margin-bottom: 15px;
+}
+.aboutAdv__icon__icons__block p {
+  font-weight: 600;
+}
+.aboutAdv__icon__btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+.aboutAdv__img {
+  width: 35%;
+}
+.aboutAdv__img img {
+  border-radius: 70px 0px 70px 70px;
+  width: 100%;
+}
+/*/About/*/
+
+/*Reviews*/
+
+.reviews__toogle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: translateX(-10%);
+}
+.reviews__toogle li {
+  position: relative;
+  margin: 0 40px;
+  transition: 0.3s;
+}
+.reviews__toogle li a {
+  cursor: pointer;
+  color: #787878;
+  font-weight: 400;
+}
+
+.reviews__toogle .slick-dots .slick-active a {
+  color: #000;
+  font-weight: 600;
+}
+.reviews__toogle .slick-dots .slick-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fd0000;
+}
+.reviewsSliderCurrent .slick-dots li {
+  width: 50%;
+}
+.reviewsSliderCurrent .slick-dots li button {
+  height: 2px;
+  width: 100%;
+  border-radius: 0;
+  background: #cdcdcd;
+}
+.reviewsSliderCurrent .slick-dots li.slick-active button {
+  background: #696969;
+}
+.reviewsSliderCurrent .slick-slide a {
+  outline: none;
+}
+.reviewsSliderCurrent .slick-dots {
+  width: 90%;
+}
+.reviewsSlider .slick-slide a {
+  outline: none;
+}
+/*/Reviews/*/
+
+/*Instagram*/
+.instagram__wrap {
+  display: flex;
+  flex-direction: column;
+}
+/*/Instagram/*/
 
 @media (max-width: 1300px) {
   .courses__box span {

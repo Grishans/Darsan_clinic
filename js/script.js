@@ -25,22 +25,7 @@ $(".saleSlider").slick({
     },
   ],
 });
-$(".portfolioSlider").on("init", function (event, slick) {
-  var dots = $(".portfolioSlider .slick-dots li");
-  dots.each(function (k, v) {
-    $(this)
-      .find("button")
-      .addClass("heading" + k);
-  });
 
-  var items = $(".portfolioSlider__current-for");
-  items.each(function (k, v) {
-    // var text = $(this).find("span").text();
-    var text = $(this).attr("data-name");
-
-    $(".heading" + k).text(text);
-  });
-});
 $(".portfolioSlider").slick({
   infinite: false,
   slidesToShow: 1,
@@ -50,6 +35,14 @@ $(".portfolioSlider").slick({
   draggable: false,
   swipe: false,
   dots: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
+  appendDots: $(".portfolioDots"),
+  customPaging: function (slider, i) {
+    var title = $(slider.$slides[i]).data("name");
+    return '<a class="portfolio__main_nav"> ' + title + " </a>";
+  },
   responsive: [
     {
       breakpoint: 600,
@@ -94,8 +87,8 @@ $(".portfolioSlider__current-nav").slick({
   draggable: false,
   swipe: false,
   dots: false,
-  asNavFor: ".portfolioSlider__current-for",
   focusOnSelect: true,
+  asNavFor: ".portfolioSlider__current-for",
   prevArrow:
     "<button id='prev' type='button' class='btn btnPrev'><img src='img/slider/arr_left.svg' alt=''></button>",
   nextArrow:
@@ -113,6 +106,7 @@ $(".portfolioSlider__current-nav").slick({
     },
   ],
 });
+
 $(".sevices_slider").slick({
   infinite: false,
   slidesToShow: 1,
@@ -191,6 +185,81 @@ $(".scs__slider").slick({
     },
   ],
 });
+
+$(".reviewsSlider").slick({
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  swipe: false,
+  dots: true,
+  speed: 500,
+  fade: true,
+  cssEase: "linear",
+  appendDots: $(".reviews__toogle"),
+  customPaging: function (slider, i) {
+    var title = $(slider.$slides[i]).data("title");
+    return '<a class="reviews__main_nav"> ' + title + " </a>";
+  },
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+$(".reviewsSliderCurrent").slick({
+  infinite: false,
+  slidesToShow: 3.3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: false,
+  swipe: true,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+
+$(".instagramSlider").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: true,
+  swipe: true,
+  dots: false,
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        arrow: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+      },
+    },
+  ],
+});
+
 ///Slider
 
 // Portfolio slider animation
