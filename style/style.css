@@ -725,7 +725,6 @@ section.about {
   color: #787878;
   font-weight: 400;
 }
-
 .reviews__toogle .slick-dots .slick-active a {
   color: #000;
   font-weight: 600;
@@ -763,11 +762,175 @@ section.about {
 /*/Reviews/*/
 
 /*Instagram*/
+section.instagram {
+  margin-bottom: 200px;
+}
 .instagram__wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
+.instagram__title,
+.instagram__BTN {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.instagram__title h1 {
+  font-size: 72px;
+  color: #fd0000;
+}
+.instagram__BTN {
+  display: flex;
+  margin-bottom: 100px;
+}
+.instagram__BTN a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #fd0000;
+  box-sizing: border-box;
+  box-shadow: inset -3.23851e-16px -5.28889px 5.28889px #ececec,
+    inset 3.23851e-16px 5.28889px 5.28889px #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.instagram__BTN a p {
+  color: #000;
+}
+.instagramSlider .btn {
+  top: unset;
+  bottom: -40%;
+}
+.instagramSlider .btnPrev {
+  left: 42%;
+}
+.instagramSlider .btnNext {
+  right: 42%;
+}
+.instagramSlideCount {
+  display: flex;
+  justify-content: flex-end;
+  width: 5%;
+  float: right;
+  position: absolute;
+  bottom: -20%;
+  right: 30%;
+}
+.instagramSlideCount span {
+  font-size: 18px;
+}
+.instagramSlideCount hr {
+  width: 70%;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /*/Instagram/*/
+
+/*Contact*/
+section.contacts {
+  display: flex;
+  flex-direction: column;
+}
+/*Contact*/
+section.contacts h1 {
+  margin: 0 6%;
+  font-size: 40px;
+}
+.contacts__wrap {
+  display: flex;
+  width: 100%;
+}
+.contacts_data__sn__wrap {
+  display: flex;
+}
+.contacts__map {
+  width: 50%;
+  min-height: 450px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 70px;
+  overflow: hidden;
+}
+.contacts_data {
+  width: 30%;
+}
+.contacts_data__wrap {
+  margin-left: 20%;
+}
+.contacts_data__wrap span {
+  display: flex;
+  font-size: 18px;
+}
+.contacts_data__adress span,
+.contacts_data__tel span,
+.contacts_data__sn span {
+  margin-bottom: 20px;
+}
+.contacts_data__tel p {
+  margin-bottom: 20px;
+}
+.contacts_data__wrap p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact_data__margin {
+  margin-bottom: 35px;
+}
+
+.contacts_data__sn__wrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fd0000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.contacts_data__sn__wrap a img {
+  width: 55%;
+  height: 55%;
+}
+/*/Contact/*/
+
+/*Footer*/
+footer {
+  display: flex;
+}
+.footer__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__hr hr {
+  background: #fd0000;
+  height: 2px;
+  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+}
+.foter__block {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  width: 48%;
+}
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*/Footer/*/
 
 @media (max-width: 1300px) {
   .courses__box span {

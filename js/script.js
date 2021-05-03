@@ -111,8 +111,8 @@ $(".sevices_slider").slick({
   infinite: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-  adaptiveHeight: true,
-  speed: 500,
+  adaptiveHeight: false,
+  speed: 300,
   fade: true,
   cssEase: "linear",
   arrows: false,
@@ -141,7 +141,7 @@ $(".sevices__drop__slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  speed: 500,
+  speed: 300,
   fade: true,
   cssEase: "linear",
   arrows: false,
@@ -246,6 +246,10 @@ $(".instagramSlider").slick({
   swipe: true,
   dots: false,
   centerMode: true,
+  prevArrow:
+    "<button id='prev' type='button' class='btn btnPrev'><img src='img/slider/arr_left.svg' alt=''></button>",
+  nextArrow:
+    "<button id='next' type='button' class='btn btnNext'><img src='img/slider/arr_right.svg' alt=''></button>",
   responsive: [
     {
       breakpoint: 600,
