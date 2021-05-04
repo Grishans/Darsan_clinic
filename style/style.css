@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Am;
+  src: local("medium"), url("../font/ArticulatCF-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Ab;
+  src: local("bold"), url("../font/ArticulatCF-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Ar;
+  src: local("medium"), url("../font/ArticulatCF-Regular.woff") format("woff");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -45,6 +58,32 @@ li,
 label {
   margin: 0;
   padding: 0;
+}
+.textContent {
+  font-size: 18px;
+}
+.textMainScreen {
+  font-size: 32px;
+}
+.textDrop {
+  font-size: 12px;
+}
+.textBold {
+  font-family: Ab;
+}
+.textMadium {
+  font-family: Am;
+}
+.textRegular {
+  font-family: Ar;
+}
+.saleTitle {
+  font-family: Ab;
+  font-size: 24px;
+}
+.section__title {
+  font-family: Ab;
+  font-size: 48px;
 }
 /* Header */
 /* header {
@@ -174,6 +213,9 @@ img.mainScreen__bg {
   z-index: 1;
   margin-left: 10%;
 }
+.mainScreen__content {
+  width: 40%;
+}
 /*/Main Screen/*/
 .generalTitle {
   position: relative;
@@ -237,10 +279,25 @@ img.mainScreen__bg {
   width: 100%;
   height: fit-content;
 }
+.servicesDots .slick-dots .slick-active a.servisec__main_nav {
+  color: #000;
+  position: relative;
+}
+.servicesDots .slick-dots .slick-active a.servisec__main_nav::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fd0000;
+}
 a.servisec__main_nav {
   color: #626262;
   cursor: pointer;
   margin-right: 20px;
+  font-family: Ab;
+  font-size: 18px;
 }
 .generalTitle__solid_blue {
   margin-bottom: 56px;
@@ -266,16 +323,19 @@ section.services {
 }
 .scsd__title {
   margin-bottom: 70px;
+  white-space: nowrap;
 }
 .scsd__title h3 {
   font-size: 48px;
+  color: #a8a39c;
 }
 .scsd__dropdown {
   width: 60%;
-  height: 30px;
+  height: 45px;
   margin-bottom: 25px;
 }
 .scsd__dropdown input {
+  position: relative;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -287,6 +347,9 @@ section.services {
   border-radius: 4px;
   cursor: pointer;
   user-select: none;
+  padding: 0;
+  padding-left: 13px;
+  box-sizing: border-box;
 }
 .scsd__timeANDprice {
   display: flex;
@@ -296,9 +359,6 @@ section.services {
 }
 .scsd__time img {
   margin-right: 15px;
-}
-.scsd__price p {
-  font-weight: 600;
 }
 .scsd__time {
   display: flex;
@@ -318,7 +378,8 @@ section.services {
   align-items: center;
   color: #000;
   cursor: pointer;
-  font-weight: 600;
+  font-family: Ab;
+  font-size: 12px;
 }
 .mainBTN span {
   display: flex;
@@ -328,7 +389,8 @@ section.services {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  font-weight: 600;
+  font-family: Ab;
+  font-size: 12px;
 }
 .sevices__drop__slider ul.slick-dots {
   position: absolute;
@@ -353,6 +415,9 @@ section.services {
   height: 40px;
   cursor: pointer;
   transition: 0.3s;
+  font-family: Ab;
+  font-size: 12px;
+  padding-left: 14px;
 }
 .sevices__drop__slider ul.slick-dots li:hover {
   background: #d9d9d9;
@@ -428,6 +493,7 @@ section.services {
 }
 .portfolioDots__wrap {
   display: flex;
+  align-items: center;
   position: relative;
   margin-bottom: 50px;
   z-index: 5;
@@ -459,6 +525,7 @@ input.portfolio__dropInput {
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0;
+  padding-left: 20px;
 }
 .portfolioDots__drop::after {
   content: url(../img/inputArrDown.svg);
@@ -501,6 +568,7 @@ input.portfolio__dropInput {
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
   overflow-y: scroll;
+  overflow-x: hidden;
   transition: 0.3s;
 }
 .portfolioDots ul.slick-dots::-webkit-scrollbar {
@@ -516,6 +584,9 @@ input.portfolio__dropInput {
   cursor: pointer;
   width: 100%;
   height: 35px;
+  font-family: Ab;
+  font-size: 12px;
+  padding-left: 22px;
 }
 .portfolioDots ul.slick-dots li a:hover {
   background: #a79e8b;
@@ -532,6 +603,7 @@ input.portfolio__dropInput {
 .portfolioSlideCount hr {
   width: 70%;
   height: 100%;
+  margin: auto;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -727,7 +799,8 @@ section.about {
 }
 .reviews__toogle .slick-dots .slick-active a {
   color: #000;
-  font-weight: 600;
+  font-family: Ab;
+  font-size: 18px;
 }
 .reviews__toogle .slick-dots .slick-active::after {
   content: "";
@@ -829,6 +902,20 @@ section.instagram {
   margin-left: 5px;
   margin-right: 5px;
 }
+.instagramSlider .slick-list .slick-track .slick-slide {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagramSlider .slick-list .slick-track .slick-slide img {
+  width: 70%;
+  transition: 0.3s;
+}
+.instagramSlider .slick-list .slick-track .slick-center img {
+  width: 100%;
+  transition: 0.3s;
+}
 /*/Instagram/*/
 
 /*Contact*/
@@ -864,7 +951,6 @@ section.contacts h1 {
 }
 .contacts_data__wrap span {
   display: flex;
-  font-size: 18px;
 }
 .contacts_data__adress span,
 .contacts_data__tel span,
@@ -923,11 +1009,59 @@ footer {
   align-items: center;
   width: 48%;
 }
+.footer__nav span {
+  position: relative;
+}
+.footer__nav span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: 0.3s;
+}
+.footer__nav span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transition: 0.3s;
+}
+.footer__nav span:hover::before {
+  width: 100%;
+}
+.footer__nav span:hover:after {
+  width: 100%;
+}
 
 .footer__copy {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.footer__copy span,
+.footer__copy a {
+  color: #787878;
+  text-decoration: none;
+  position: relative;
+}
+.footer__copy a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #787878;
+  transition: 0.3s;
+}
+.footer__copy a:hover::after {
+  width: 100%;
 }
 
 /*/Footer/*/
