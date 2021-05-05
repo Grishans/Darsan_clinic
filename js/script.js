@@ -118,6 +118,7 @@ $(".sevices_slider").slick({
   arrows: false,
   swipe: false,
   dots: true,
+
   appendDots: $(".servicesDots"),
   customPaging: function (slider, i) {
     var title = $(slider.$slides[i]).data("title");
@@ -169,9 +170,14 @@ $(".scs__slider").slick({
   slidesToShow: 1.3,
   slidesToScroll: 1,
   adaptiveHeight: true,
-  arrows: false,
+  arrows: true,
   swipe: true,
   dots: false,
+  focusOnSelect: true,
+  prevArrow:
+    "<button id='prev' type='button' class='btn2 btnPrev'><img src='img/slider/arr_left.svg' alt=''></button>",
+  nextArrow:
+    "<button id='next' type='button' class='btn2 btnNext'><img src='img/slider/arr_right.svg' alt=''></button>",
   responsive: [
     {
       breakpoint: 600,
@@ -239,7 +245,7 @@ $(".reviewsSliderCurrent").slick({
 
 $(".instagramSlider").slick({
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: true,

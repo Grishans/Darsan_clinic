@@ -13,237 +13,419 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header__wrap">
-        <nav>
-          <span class="textMadium">Услуги</span>
-          <span class="textMadium">Акции</span>
-          <span class="textMadium">О нас</span>
-          <span class="textMadium">Портфолио</span>
-          <span class="textMadium">Отзывы</span>
-        </nav>
-        <div class="header__logo">
-          <img src="img/logo.png" alt="" />
-        </div>
-        <div class="header__place">
-          <div class="header__place__block">
-            <img src="img/header__target.svg" alt="" />
-            <p>Ул. Розы Люксембург, 32</p>
+    <div class="bodyGlobalWrap">
+      <header>
+        <div class="header__wrap">
+          <div class="header__logo">
+            <img src="img/logo_white.png" alt="" />
           </div>
-          <div class="header__place__block">
-            <img src="img/header__phone.svg" alt="" />
-            <div class="header__place__phones">
-              <p>+380715138489</p>
-              <p>+380715138489</p>
-            </div>
+          <nav>
+            <span class="textMadium">Услуги</span>
+            <span class="textMadium">Акции</span>
+            <span class="textMadium">О нас</span>
+            <span class="textMadium">Портфолио</span>
+            <span class="textMadium">Отзывы</span>
+          </nav>
+
+          <div class="header__sn">
+            <a href="#"><img src="img/vk.png" alt="" /></a
+            ><a href="#"><img src="img/fb.png" alt="" /></a
+            ><a href="#"><img src="img/inst.png" alt="" /></a>
           </div>
         </div>
+        <img class="header__bg" src="img/headerBG.svg" alt="" />
+      </header>
+
+      <section class="mainScreen">
+        <div class="mainScreen__wrap">
+          <div class="mainScreen__content">
+            <p class="textRegular textMainScreen">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ligula ex, eleifend quis facilisis aliquet, tristique suscipit
+              lorem. Nulla fringilla,
+            </p>
+            <span class="mainBTN">Записаться</span>
+          </div>
+        </div>
+        <img src="img/Darsan.jpg" alt="" class="mainScreen__bg" />
+      </section>
+
+      <div class="generalTitle generalTitle_left">
+        <h1 class="textBold">Услуги</h1>
       </div>
-      <!-- <img class="header__bg" src="img/header__bg.svg" alt="" /> -->
-    </header>
 
-    <section class="mainScreen">
-      <div class="mainScreen__wrap">
-        <div class="mainScreen__content">
-          <p class="textRegular textMainScreen">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            ligula ex, eleifend quis facilisis aliquet, tristique suscipit
-            lorem. Nulla fringilla,
-          </p>
-          <span class="mainBTN">Записаться</span>
-        </div>
-      </div>
-      <img src="img/Darsan.jpg" alt="" class="mainScreen__bg" />
-    </section>
-
-    <div class="generalTitle generalTitle_left">
-      <h1 class="textBold">Услуги</h1>
-    </div>
-
-    <section class="services">
-      <div class="general__wrap services__wrap">
-        <div class="servicesDots"></div>
-        <div class="sevices_slider">
-          <div data-title="Массаж">
-            <div class="sevices__drop__slider">
-              <div data-titledrop="Детский массаж">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3 class="textBold">Детский массаж</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                      <!-- <div class="service_drop_dots"></div> -->
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p class="textRegular textContent">20 мин</p>
+      <section class="services">
+        <div class="general__wrap services__wrap">
+          <div class="servicesDots"></div>
+          <div class="sevices_slider">
+            <div data-title="Массаж">
+              <div class="sevices__drop__slider">
+                <div data-titledrop="Детский массаж">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3 class="textBold">Детский массаж</h3>
                       </div>
-                      <div class="scsd__price">
-                        <p class="textBold textContent">3999 руб</p>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
+                      </div>
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p class="textRegular textContent">20 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p class="textBold textContent">3999 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p class="textRegular textContent">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur ligula ex, eleifend quis
+                        </p>
+                      </div>
+                      <span class="mainBTN">Записаться на прием</span>
+                    </div>
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
                     </div>
-                    <div class="scsd__description">
-                      <p class="textRegular textContent">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur ligula ex, eleifend quis
-                      </p>
-                    </div>
-                    <span class="mainBTN">Записаться на прием</span>
                   </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                </div>
+                <div data-titledrop="Лечебный массаж">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3>Лечебный массаж</h3>
+                      </div>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
+                        <!-- <div class="service_drop_dots"></div> -->
+                      </div>
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p>20 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p>4500 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque voluptates repudiandae minima eius
+                          ducimus quas, natus velit ipsa minus numquam cum
+                          doloremque fugit ratione exercitationem porro
+                          recusandae quibusdam. Distinctio, voluptatem? Lorem
+                          ipsum dolor sit, amet consectetur adipisicing elit.
+                          Cumque voluptates repudiandae minima eius ducimus
+                          quas, natus velit ipsa minus numquam cum doloremque
+                          fugit ratione exercitationem porro recusandae
+                          quibusdam. Distinctio, voluptatem?
+                        </p>
+                      </div>
+                      <div class="mainBTN">
+                        <span>Записаться на прием</span>
                       </div>
                     </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                  </div>
+                </div>
+                <div data-titledrop="Линфотический массаж">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3>Лечебный массаж</h3>
+                      </div>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
+                        <!-- <div class="service_drop_dots"></div> -->
+                      </div>
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p>20 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p>4500 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque voluptates repudiandae minima eius
+                          ducimus quas, natus velit ipsa minus numquam cum
+                          doloremque fugit ratione exercitationem porro
+                          recusandae quibusdam. Distinctio, voluptatem?
+                        </p>
+                      </div>
+                      <div class="mainBTN">
+                        <span>Записаться на прием</span>
                       </div>
                     </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div data-titledrop="Лечебный массаж">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3>Лечебный массаж</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                      <!-- <div class="service_drop_dots"></div> -->
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p>20 мин</p>
+            </div>
+            <div data-title="Наращивание ресниц">
+              <div class="sevices__drop__slider">
+                <div data-titledrop="Обычное наращивание">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3>Наращивание ресниц</h3>
                       </div>
-                      <div class="scsd__price">
-                        <p>4500 руб</p>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
                       </div>
-                    </div>
-                    <div class="scsd__description">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Cumque voluptates repudiandae minima eius ducimus
-                        quas, natus velit ipsa minus numquam cum doloremque
-                        fugit ratione exercitationem porro recusandae quibusdam.
-                        Distinctio, voluptatem? Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Cumque voluptates
-                        repudiandae minima eius ducimus quas, natus velit ipsa
-                        minus numquam cum doloremque fugit ratione
-                        exercitationem porro recusandae quibusdam. Distinctio,
-                        voluptatem?
-                      </p>
-                    </div>
-                    <div class="mainBTN">
-                      <span>Записаться на прием</span>
-                    </div>
-                  </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p>120 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p>3999 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Curabitur ligula ex, eleifend quis
+                        </p>
+                      </div>
+                      <div class="mainBTN">
+                        <span>Записаться на прием</span>
                       </div>
                     </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div data-titledrop="Линфотический массаж">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3>Лечебный массаж</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                      <!-- <div class="service_drop_dots"></div> -->
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p>20 мин</p>
+                <div data-titledrop="Необычное наращивание">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3>Лечебный массаж</h3>
                       </div>
-                      <div class="scsd__price">
-                        <p>4500 руб</p>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
+                        <!-- <div class="service_drop_dots"></div> -->
+                      </div>
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p>20 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p>4500 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque voluptates repudiandae minima eius
+                          ducimus quas, natus velit ipsa minus numquam cum
+                          doloremque fugit ratione exercitationem porro
+                          recusandae quibusdam. Distinctio, voluptatem? Lorem
+                          ipsum dolor sit, amet consectetur adipisicing elit.
+                          Cumque voluptates repudiandae minima eius ducimus
+                          quas, natus velit ipsa minus numquam cum doloremque
+                          fugit ratione exercitationem porro recusandae
+                          quibusdam. Distinctio, voluptatem?
+                        </p>
+                      </div>
+                      <div class="mainBTN">
+                        <span>Записаться на прием</span>
                       </div>
                     </div>
-                    <div class="scsd__description">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Cumque voluptates repudiandae minima eius ducimus
-                        quas, natus velit ipsa minus numquam cum doloremque
-                        fugit ratione exercitationem porro recusandae quibusdam.
-                        Distinctio, voluptatem?
-                      </p>
-                    </div>
-                    <div class="mainBTN">
-                      <span>Записаться на прием</span>
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                </div>
+                <div data-titledrop="Супер наращивание">
+                  <div class="sevices_current__slide">
+                    <div class="scs__description">
+                      <div class="scsd__title">
+                        <h3>Лечебный массаж</h3>
+                      </div>
+                      <div class="scsd__dropdown">
+                        <input
+                          class="textBold textDrop"
+                          type="text"
+                          value="Детский массаж"
+                          readonly
+                        />
+                        <!-- <div class="service_drop_dots"></div> -->
+                      </div>
+                      <div class="scsd__timeANDprice">
+                        <div class="scsd__time">
+                          <img src="img/clock.svg" alt="" />
+                          <p>20 мин</p>
+                        </div>
+                        <div class="scsd__price">
+                          <p>4500 руб</p>
+                        </div>
+                      </div>
+                      <div class="scsd__description">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Cumque voluptates repudiandae minima eius
+                          ducimus quas, natus velit ipsa minus numquam cum
+                          doloremque fugit ratione exercitationem porro
+                          recusandae quibusdam. Distinctio, voluptatem?
+                        </p>
+                      </div>
+                      <div class="mainBTN">
+                        <span>Записаться на прием</span>
                       </div>
                     </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                    <div class="scs__slider">
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="scs__slide__current">
+                          <img src="img/service__test.png" alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -251,742 +433,403 @@
               </div>
             </div>
           </div>
-          <div data-title="Наращивание ресниц">
-            <div class="sevices__drop__slider">
-              <div data-titledrop="Обычное наращивание">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3>Наращивание ресниц</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p>120 мин</p>
-                      </div>
-                      <div class="scsd__price">
-                        <p>3999 руб</p>
-                      </div>
-                    </div>
-                    <div class="scsd__description">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur ligula ex, eleifend quis
-                      </p>
-                    </div>
-                    <div class="mainBTN">
-                      <span>Записаться на прием</span>
-                    </div>
-                  </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-titledrop="Необычное наращивание">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3>Лечебный массаж</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                      <!-- <div class="service_drop_dots"></div> -->
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p>20 мин</p>
-                      </div>
-                      <div class="scsd__price">
-                        <p>4500 руб</p>
-                      </div>
-                    </div>
-                    <div class="scsd__description">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Cumque voluptates repudiandae minima eius ducimus
-                        quas, natus velit ipsa minus numquam cum doloremque
-                        fugit ratione exercitationem porro recusandae quibusdam.
-                        Distinctio, voluptatem? Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Cumque voluptates
-                        repudiandae minima eius ducimus quas, natus velit ipsa
-                        minus numquam cum doloremque fugit ratione
-                        exercitationem porro recusandae quibusdam. Distinctio,
-                        voluptatem?
-                      </p>
-                    </div>
-                    <div class="mainBTN">
-                      <span>Записаться на прием</span>
-                    </div>
-                  </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-titledrop="Супер наращивание">
-                <div class="sevices_current__slide">
-                  <div class="scs__description">
-                    <div class="scsd__title">
-                      <h3>Лечебный массаж</h3>
-                    </div>
-                    <div class="scsd__dropdown">
-                      <input
-                        class="textBold textDrop"
-                        type="text"
-                        value="Детский массаж"
-                        readonly
-                      />
-                      <!-- <div class="service_drop_dots"></div> -->
-                    </div>
-                    <div class="scsd__timeANDprice">
-                      <div class="scsd__time">
-                        <img src="img/clock.svg" alt="" />
-                        <p>20 мин</p>
-                      </div>
-                      <div class="scsd__price">
-                        <p>4500 руб</p>
-                      </div>
-                    </div>
-                    <div class="scsd__description">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Cumque voluptates repudiandae minima eius ducimus
-                        quas, natus velit ipsa minus numquam cum doloremque
-                        fugit ratione exercitationem porro recusandae quibusdam.
-                        Distinctio, voluptatem?
-                      </p>
-                    </div>
-                    <div class="mainBTN">
-                      <span>Записаться на прием</span>
-                    </div>
-                  </div>
-                  <div class="scs__slider">
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                    <div>
-                      <div class="scs__slide__current">
-                        <img src="img/service__test.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sale">
-      <div class="general__wrap">
-        <div class="generalTitle generalTitle__red generalTitle__sale">
-          <h1>Акции</h1>
-        </div>
-        <div class="saleSlider">
-          <div>
-            <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
-            <div class="saleSlider__text">
-              <h3 class="saleTitle">Акция!</h3>
-              <p class="textRegular textContent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ligula ex, eleifend quis facilisis aliquet, tristique
-                suscipit lorem. Nulla fringilla,
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
-            <div class="saleSlider__text">
-              <h3>Акция!</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ligula ex, eleifend quis facilisis aliquet, tristique
-                suscipit lorem. Nulla fringilla,
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
-            <div class="saleSlider__text">
-              <h3>Акция!</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ligula ex, eleifend quis facilisis aliquet, tristique
-                suscipit lorem. Nulla fringilla,
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="generalTitle generalTitle__blue generalTitlePortfolio">
-      <h1 class="textBold">Портфолио</h1>
-    </div>
-
-    <section class="portfolio">
-      <div class="general__wrap portfolio__wrap">
-        <div class="portfolio__slider__wrap">
-          <div class="portfolioDots__wrap">
-            <h2 class="section__title">Портфолио</h2>
-            <div class="portfolioDots__drop">
-              <div class="portfolioDots"></div>
-              <input
-                type="text"
-                readonly
-                class="portfolio__dropInput textBold textDrop"
-              />
-            </div>
-          </div>
-          <div class="portfolioSlider">
-            <!-- Тут слайдер в слайдере, названия (маникюр, педикюр ...) это data-name, который вешается на каждый внутренний слайдер, внутри глобального-->
-            <div data-name="Наращивание ногтей">
-              <div class="portfolioSlider__current-for">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="portfolioSlider__current-nav">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div data-name="Маникюр">
-              <div class="portfolioSlider__current-for">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="portfolioSlider__current-nav">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div data-name="Педикюр">
-              <div class="portfolioSlider__current-for">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="portfolioSlider__current-nav">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div data-name="Педикюр">
-              <div class="portfolioSlider__current-for">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="portfolioSlider__current-nav">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div data-name="Педикюр">
-              <div class="portfolioSlider__current-for">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="portfolioSlider__current-nav">
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="img/preloader.svg"
-                    data-src="img/Darsan.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolioSlideCount">
-            <span class="portfolioSlideCount__change textRegular textContent"
+          <div class="servicesSlideCount">
+            <span class="servicesSlideCount__change textRegular textContent"
               >01</span
             >
             <hr />
-            <span class="portfolioSlideCount__all textRegular textContent"
+            <span class="servicesSlideCount__all textRegular textContent"
               >02</span
             >
           </div>
         </div>
-      </div>
-    </section>
+        <img class="servicesBG" src="img/services/servicesGB.png" alt="" />
+        <span class="servicesBGText textBold">Наращивание</span>
+      </section>
 
-    <section class="about">
-      <div class="about__wrap">
-        <div class="about__logo">
-          <img src="img/logo.png" alt="" />
-        </div>
-        <div class="about__about">
-          <div class="about__img">
-            <img src="img/aboutStock.png" alt="" />
+      <section class="sale">
+        <div class="general__wrap">
+          <div class="generalTitle generalTitle__red generalTitle__sale">
+            <h1>Акции</h1>
           </div>
-          <div class="about__text">
-            <div class="about__text__title">
-              <h3 class="textBold textMainScreen">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </h3>
-            </div>
-            <div class="about__text__description">
-              <p class="textRegular textContent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ligula ex, eleifend quis faLorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Curabitur ligula ex, eleifend quis
-                facilisis aliquet, tristique suscipit lorem. Nulla fringilla,
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur ligula ex,
-              </p>
-            </div>
-            <div class="about__text__sn">
-              <a href="#">
-                <img src="img/vk.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/inst.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/fb.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="about__advantages">
-          <div class="aboutAdv__icon">
-            <div class="aboutAdv__icon__icons">
-              <div class="aboutAdv__icon__icons__block">
-                <img src="img/about_icons_1.png" alt="" />
-                <p class="textBold textContent">Первоклассный сервис</p>
-              </div>
-              <div class="aboutAdv__icon__icons__block">
-                <img src="img/about_icons_2.png" alt="" />
-                <p class="textBold textContent">Удобное расположение</p>
-              </div>
-              <div class="aboutAdv__icon__icons__block">
-                <img src="img/about_icons_3.png" alt="" />
-                <p class="textBold textContent">Большой спектр услуг</p>
+          <div class="saleSlider">
+            <div>
+              <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
+              <div class="saleSlider__text">
+                <h3 class="saleTitle">Акция!</h3>
+                <p class="textRegular textContent">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ligula ex, eleifend quis facilisis aliquet,
+                  tristique suscipit lorem. Nulla fringilla,
+                </p>
               </div>
             </div>
-            <div class="aboutAdv__icon__btn">
-              <span class="mainBTN">Записаться</span>
+            <div>
+              <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
+              <div class="saleSlider__text">
+                <h3>Акция!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ligula ex, eleifend quis facilisis aliquet,
+                  tristique suscipit lorem. Nulla fringilla,
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="img/preloader.svg" data-src="img/Darsan.jpg" alt="" />
+              <div class="saleSlider__text">
+                <h3>Акция!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ligula ex, eleifend quis facilisis aliquet,
+                  tristique suscipit lorem. Nulla fringilla,
+                </p>
+              </div>
             </div>
           </div>
-          <div class="aboutAdv__img">
-            <img src="img/aboutStock.png" alt="" />
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="reviews">
-      <div class="services__wrap rewiews__wrap">
-        <div class="reviews__toogle"></div>
-        <div class="reviews__slider__wrap">
-          <div class="reviewsSlider">
-            <div data-title="Видео отзывы">
-              <div class="reviewsSliderCurrent">
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+      <section class="portfolio">
+        <div class="general__wrap portfolio__wrap">
+          <div class="portfolio__slider__wrap">
+            <div class="portfolioDots__wrap">
+              <h2 class="section__title">Портфолио</h2>
+              <div class="portfolioDots__drop">
+                <div class="portfolioDots"></div>
+                <input
+                  type="text"
+                  readonly
+                  class="portfolio__dropInput textBold textDrop"
+                />
+              </div>
+            </div>
+            <div class="portfolioSlider">
+              <!-- Тут слайдер в слайдере, названия (маникюр, педикюр ...) это data-name, который вешается на каждый внутренний слайдер, внутри глобального-->
+              <div data-name="Наращивание ногтей">
+                <div class="portfolioSlider__current-for">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+                <div class="portfolioSlider__current-nav">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+              </div>
+              <div data-name="Маникюр">
+                <div class="portfolioSlider__current-for">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+                <div class="portfolioSlider__current-nav">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+              </div>
+              <div data-name="Педикюр">
+                <div class="portfolioSlider__current-for">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
+                <div class="portfolioSlider__current-nav">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div data-name="Педикюр">
+                <div class="portfolioSlider__current-for">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="portfolioSlider__current-nav">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div data-name="Педикюр">
+                <div class="portfolioSlider__current-for">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="portfolioSlider__current-nav">
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="img/preloader.svg"
+                      data-src="img/Darsan.jpg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div data-title="Текстовые отзывы">
-              <div class="reviewsSliderCurrent">
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"
-                    ><img src="img/reviewsStock.png" alt=""
-                  /></a>
-                </div>
-              </div>
+            <div class="portfolioSlideCount">
+              <span class="portfolioSlideCount__change textRegular textContent"
+                >01</span
+              >
+              <hr />
+              <span class="portfolioSlideCount__all textRegular textContent"
+                >02</span
+              >
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <img class="portfolioBG" src="img/portfolio/portfolioBG.png" alt="" />
+        <span class="portfolioBGtext textBold">Порфолио</span>
+      </section>
 
-    <section class="instagram">
-      <div class="instagram__wrap">
-        <div class="instagram__title">
-          <h1 class="textRegular">Наш инстаграм</h1>
-        </div>
-        <div class="instagram__BTN">
-          <a href="#"
-            ><p class="textBold textDrop">Перейти в профиль</p>
-            <img src="img/isnt_inst.svg" alt=""
-          /></a>
-        </div>
-        <div class="instagramSlider">
-          <div><img src="img/aboutStock.png" alt="" /></div>
-          <div><img src="img/aboutStock.png" alt="" /></div>
-          <div><img src="img/aboutStock.png" alt="" /></div>
-          <div><img src="img/aboutStock.png" alt="" /></div>
-          <div><img src="img/aboutStock.png" alt="" /></div>
-          <div><img src="img/aboutStock.png" alt="" /></div>
-        </div>
-        <div class="instagramSlideCount">
-          <span class="instagramSlideCount__change">01</span>
-          <hr />
-          <span class="instagramSlideCount__all">02</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <h1 class="textBold">Контакты</h1>
-      <div class="general__wrap contacts__wrap">
-        <div class="contacts__map">
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9f6369c739fae49828ae6f66e73ab5cdf3c708c72e7c5d686bd8cc096b088d1&amp;source=constructor"
-            width="100%"
-            height="100%"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="contacts_data">
-          <div class="contacts_data__wrap">
-            <div class="contacts_data__adress contact_data__margin">
-              <span class="textMadium textContent">Адресс:</span>
-              <p class="textBold textContent">Ул. Розы Люксембург, 32</p>
+      <section class="about">
+        <div class="about__wrap">
+          <div class="about__logo">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <div class="about__about">
+            <div class="about__img">
+              <img src="img/aboutStock.png" alt="" />
             </div>
-            <div class="contacts_data__tel contact_data__margin">
-              <span class="textMadium textContent">Телефон:</span>
-              <p class="textBold textContent">+380715138489</p>
-              <p class="textBold textContent">+380715138489</p>
-            </div>
-            <div class="contacts_data__sn contact_data__margin">
-              <span class="textMadium textContent">Социальные сети:</span>
-              <div class="contacts_data__sn__wrap">
+            <div class="about__text">
+              <div class="about__text__title">
+                <h3 class="textBold textMainScreen">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h3>
+              </div>
+              <div class="about__text__description">
+                <p class="textRegular textContent">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur ligula ex, eleifend quis faLorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Curabitur ligula ex,
+                  eleifend quis facilisis aliquet, tristique suscipit lorem.
+                  Nulla fringilla, Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Curabitur ligula ex,
+                </p>
+              </div>
+              <div class="about__text__sn">
                 <a href="#">
                   <img src="img/vk.png" alt="" />
                 </a>
@@ -998,45 +841,220 @@
                 </a>
               </div>
             </div>
-            <div class="contacts_data__BTN">
-              <span class="mainBTN">Записаться</span>
+          </div>
+          <div class="about__advantages">
+            <div class="aboutAdv__icon">
+              <div class="aboutAdv__icon__icons">
+                <div class="aboutAdv__icon__icons__block">
+                  <img src="img/about_icons_1.png" alt="" />
+                  <p class="textBold textContent">Первоклассный сервис</p>
+                </div>
+                <div class="aboutAdv__icon__icons__block">
+                  <img src="img/about_icons_2.png" alt="" />
+                  <p class="textBold textContent">Удобное расположение</p>
+                </div>
+                <div class="aboutAdv__icon__icons__block">
+                  <img src="img/about_icons_3.png" alt="" />
+                  <p class="textBold textContent">Большой спектр услуг</p>
+                </div>
+              </div>
+              <div class="aboutAdv__icon__btn">
+                <span class="mainBTN">Записаться</span>
+              </div>
+            </div>
+            <div class="aboutAdv__img">
+              <img src="img/aboutStock.png" alt="" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <span class="aboutBGtext textBold">О НАС</span>
+      </section>
 
-    <footer>
-      <div class="general__wrap footer__wrap">
-        <div class="footer__hr">
-          <hr />
+      <section class="reviews">
+        <div class="services__wrap rewiews__wrap">
+          <h2 class="section__title">Отзывы</h2>
+          <div class="reviews__toogle"></div>
+          <div class="reviews__slider__wrap">
+            <div class="reviewsSlider">
+              <div data-title="Видео отзывы">
+                <div class="reviewsSliderCurrent">
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                  <div>
+                    <video src="img/testVideo.mp4" controls></video>
+                  </div>
+                </div>
+              </div>
+              <div data-title="Текстовые отзывы">
+                <div class="reviewsSliderCurrent">
+                  <div>
+                    <img src="img/reviewsStock.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/reviewsStock.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/reviewsStock.png" alt="" />
+                  </div>
+                  <div>
+                    <img src="img/reviewsStock.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="foter__block">
-          <div class="footer__logo">
-            <img src="img/logo.png" alt="" />
+        <img class="reviewsBG" src="img/reviews/reviewsGB.png" alt="" />
+      </section>
+
+      <section class="instagram">
+        <div class="instagram__wrap">
+          <div class="instagram__title">
+            <h1 class="textRegular">Наш инстаграм</h1>
           </div>
-          <div class="footer__nav">
-            <nav>
-              <span class="textMadium textContent">Услуги</span>
-              <span class="textMadium textContent">Акции</span>
-              <span class="textMadium textContent">О нас</span>
-              <span class="textMadium textContent">Портфолио</span>
-              <span class="textMadium textContent">Отзывы</span>
-            </nav>
+          <div class="instagram__BTN">
+            <a href="#"
+              ><p class="textBold textDrop">Перейти в профиль</p>
+              <img src="img/isnt_inst.svg" alt=""
+            /></a>
           </div>
-          <div class="footer__copy">
-            <span class="textMadium textContent">© 2021 </span>
-            <span class="textMadium textContent"
-              ><a class="textMadium textContent" href="https://itd.company/">
-                ITD Company.</a
+          <div class="instagramSlider">
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+            <div><img src="img/insta/instaPhoto.jpg" alt="" /></div>
+          </div>
+          <div class="instagramSlideCount">
+            <span class="instagramSlideCount__change">01</span>
+            <hr />
+            <span class="instagramSlideCount__all">02</span>
+          </div>
+          <img class="instaBGLeft" src="img/insta/instBlob.svg" alt="" />
+        </div>
+        <span class="instaBGtext textBold">подписывайтесь на</span>
+      </section>
+
+      <section class="contacts">
+        <h1 class="textBold">Контакты</h1>
+        <div class="general__wrap contacts__wrap">
+          <div class="contacts__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9f6369c739fae49828ae6f66e73ab5cdf3c708c72e7c5d686bd8cc096b088d1&amp;source=constructor"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="contacts_data">
+            <div class="contacts_data__wrap">
+              <div class="contacts_data__adress contact_data__margin">
+                <span class="textMadium textContent">Адресс:</span>
+                <p class="textBold textContent">Ул. Розы Люксембург, 32</p>
+              </div>
+              <div class="contacts_data__tel contact_data__margin">
+                <span class="textMadium textContent">Телефон:</span>
+                <p class="textBold textContent">+380715138489</p>
+                <p class="textBold textContent">+380715138489</p>
+              </div>
+              <div class="contacts_data__sn contact_data__margin">
+                <span class="textMadium textContent">Социальные сети:</span>
+                <div class="contacts_data__sn__wrap">
+                  <a href="#">
+                    <img src="img/vk.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/inst.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/fb.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="contacts_data__BTN">
+                <span class="mainBTN">Записаться</span>
+              </div>
+              <img class="contactsDataBG" src="img/contactBlob.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="general__wrap footer__wrap">
+          <div class="footer__hr">
+            <hr />
+          </div>
+          <div class="foter__block">
+            <div class="footer__logo">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <div class="footer__nav">
+              <nav>
+                <span class="textMadium textContent">Услуги</span>
+                <span class="textMadium textContent">Акции</span>
+                <span class="textMadium textContent">О нас</span>
+                <span class="textMadium textContent">Портфолио</span>
+                <span class="textMadium textContent">Отзывы</span>
+              </nav>
+            </div>
+            <div class="footer__copy">
+              <span class="textMadium textContent">© 2021 </span>
+              <span class="textMadium textContent"
+                ><a class="textMadium textContent" href="https://itd.company/">
+                  ITD Company.</a
+                >
+                All rights reserved</span
               >
-              All rights reserved</span
-            >
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
+    <div class="MainForm">
+      <div class="MainForm__wrap">
+        <img class="formClose" src="img/formClose.svg" alt="" />
+        <div class="MainForm__text">
+          <p class="textMadium">Свяжитесь с нами</p>
+          <span class="textBold">И мы Вам перезвоним!</span>
+        </div>
+        <hr />
+        <div class="MainForm__form">
+          <form action="">
+            <input type="text" placeholder="Имя" />
+            <input type="number" placeholder="Номер телефона" />
+            <input class="formDropInput" type="text" placeholder="Тип услуги" />
+            <input type="date" placeholder="Дата" />
+            <input
+              class="formSubmit"
+              type="submit"
+              value="Записаться на прием"
+            />
+            <ul class="mainFormDrop">
+              <li>Детский массаж</li>
+              <li>Лимфотический массаж</li>
+              <li>Покраска ногтей</li>
+              <li>Наращивание ногтей</li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script
       type="text/javascript"
@@ -1047,5 +1065,6 @@
     <script src="js/services.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/instagram.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
