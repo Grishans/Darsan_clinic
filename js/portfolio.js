@@ -9,6 +9,10 @@ var dropPortfolioBTN = document.querySelectorAll(
   ".portfolioSlider .portfolioSlider__current-nav .btn"
 );
 
+var portfolioDropIcon = document.querySelector(
+  ".portfolioDots__drop .dropIcon"
+);
+
 var portfolioNumberCurrent = document.querySelector(
   ".portfolioSlideCount__change"
 );
@@ -18,17 +22,12 @@ var portfolioNavCurrentSlide = document.querySelectorAll(
 );
 var PortfolioCurrentNavSlider; // для переопределения в функции подсчета слайдов
 
-let dropPortfolioToogle = false;
+var dropPortfolioToogle = false;
 
 dropPortfolioInput.addEventListener("click", function () {
-  dropPortfolioWrap.classList.toggle("portfolioDots__dropUp");
-  if (dropPortfolioToogle) {
-    dropPortfolioDotsWrap.style.height = 0;
-    dropPortfolioToogle = !dropPortfolioToogle;
-  } else {
-    dropPortfolioDotsWrap.style.height = "auto";
-    dropPortfolioToogle = !dropPortfolioToogle;
-  }
+  // dropPortfolioWrap.classList.toggle("portfolioDots__dropUp");
+  showHidePortfolioDrop();
+  dropPortfolioToogle = !dropPortfolioToogle;
 }); // Клик по выпадающему списку
 
 for (let i = 0; i < dropPortfolioLI.length; i++) {
@@ -42,6 +41,7 @@ for (let i = 0; i < dropPortfolioLI.length; i++) {
 
     PortfolioCurrentNavSlider = i;
     resetPortfolioCountSlide(PortfolioCurrentNavSlider);
+    rotateDropIcon(false);
   });
 } // Клик по пунктам списка
 
@@ -57,6 +57,11 @@ for (let i = 0; i < portfolioNavCurrentSlide.length; i++) {
   });
 } // Изменение счетчика слайда на клик по слайду nav
 
+portfolioDropIcon.addEventListener("click", function () {
+  showHidePortfolioDrop();
+  dropPortfolioToogle = !dropPortfolioToogle;
+});
+
 function resetPortfolioCountSlide(i) {
   portfolioNumberCurrent.innerHTML =
     $(".portfolioSlider__current-nav:eq(" + i + ")").slick(
@@ -66,6 +71,24 @@ function resetPortfolioCountSlide(i) {
     ".portfolioSlider__current-nav:eq(" + i + ")"
   ).slick("getSlick").slideCount; // Всего слайдов
 } // Переопределение подсчета слайдов
+
+function rotateDropIcon(trigger) {
+  if (trigger) {
+    portfolioDropIcon.style.transform = "rotate(180deg)";
+  } else {
+    portfolioDropIcon.style.transform = "rotate(0deg)";
+  }
+} // поворачивает иконку на инпуте
+
+function showHidePortfolioDrop() {
+  if (dropPortfolioToogle) {
+    dropPortfolioDotsWrap.style.height = 0;
+    rotateDropIcon(false);
+  } else {
+    dropPortfolioDotsWrap.style.height = "auto";
+    rotateDropIcon(true);
+  }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   let dropInputSize = dropPortfolioInput.getBoundingClientRect().height;

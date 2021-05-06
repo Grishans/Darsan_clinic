@@ -19,6 +19,8 @@ $(".saleSlider").slick({
         arrow: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable: true,
+        swipe: true,
         infinite: false,
         dots: true,
       },
@@ -100,8 +102,10 @@ $(".portfolioSlider__current-nav").slick({
         arrow: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable: true,
+        swipe: true,
         infinite: false,
-        dots: true,
+        dots: false,
       },
     },
   ],
@@ -118,7 +122,6 @@ $(".sevices_slider").slick({
   arrows: false,
   swipe: false,
   dots: true,
-
   appendDots: $(".servicesDots"),
   customPaging: function (slider, i) {
     var title = $(slider.$slides[i]).data("title");
@@ -182,11 +185,13 @@ $(".scs__slider").slick({
     {
       breakpoint: 600,
       settings: {
-        arrow: false,
+        infinite: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "20%",
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false,
-        dots: true,
+        dots: false,
       },
     },
   ],
@@ -234,10 +239,10 @@ $(".reviewsSliderCurrent").slick({
       breakpoint: 600,
       settings: {
         arrow: false,
-        slidesToShow: 1,
+        slidesToShow: 1.2,
         slidesToScroll: 1,
         infinite: false,
-        dots: true,
+        dots: false,
       },
     },
   ],
@@ -260,11 +265,13 @@ $(".instagramSlider").slick({
     {
       breakpoint: 600,
       settings: {
+        infinite: true,
         arrow: false,
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: false,
-        dots: true,
+        centerMode: true,
+        centerPadding: "80px",
       },
     },
   ],
@@ -289,3 +296,8 @@ for (let i = 0; i < portfSlides.length; i++) {
   });
 }
 /// Portfolio slider animation
+
+function scrollToCondition() {
+  let feedback = document.querySelector(".condition");
+  feedback.scrollIntoView({ behavior: "smooth" });
+}

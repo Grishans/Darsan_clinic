@@ -26,14 +26,19 @@
             <span class="textMadium">Портфолио</span>
             <span class="textMadium">Отзывы</span>
           </nav>
-
           <div class="header__sn">
             <a href="#"><img src="img/vk.png" alt="" /></a
             ><a href="#"><img src="img/fb.png" alt="" /></a
             ><a href="#"><img src="img/inst.png" alt="" /></a>
           </div>
+          <img
+            class="headerMobilToogle"
+            src="img/headerMobilToogle.svg"
+            alt=""
+          />
         </div>
         <img class="header__bg" src="img/headerBG.svg" alt="" />
+        <img class="header__bg__mobil" src="img/headerBGmobil.svg" alt="" />
       </header>
 
       <section class="mainScreen">
@@ -72,6 +77,11 @@
                           type="text"
                           value="Детский массаж"
                           readonly
+                        />
+                        <img
+                          class="dropIcon"
+                          src="img/inputArrDown.svg"
+                          alt=""
                         />
                       </div>
                       <div class="scsd__timeANDprice">
@@ -502,6 +512,7 @@
                   readonly
                   class="portfolio__dropInput textBold textDrop"
                 />
+                <img class="dropIcon" src="img/inputArrDown.svg" alt="" />
               </div>
             </div>
             <div class="portfolioSlider">
@@ -809,6 +820,7 @@
           <div class="about__logo">
             <img src="img/logo.svg" alt="" />
           </div>
+          <span class="aboutBGtext textBold aboutBGtextMobil">О НАС</span>
           <div class="about__about">
             <div class="about__img">
               <img src="img/aboutStock.png" alt="" />
@@ -922,6 +934,9 @@
 
       <section class="instagram">
         <div class="instagram__wrap">
+          <span class="instaBGtext textBold instaBGtextMobil"
+            >подписывайтесь на</span
+          >
           <div class="instagram__title">
             <h1 class="textRegular">Наш инстаграм</h1>
           </div>
@@ -1001,7 +1016,7 @@
           </div>
           <div class="foter__block">
             <div class="footer__logo">
-              <img src="img/logo.png" alt="" />
+              <img src="img/logo.svg" alt="" />
             </div>
             <div class="footer__nav">
               <nav>
@@ -1038,7 +1053,14 @@
           <form action="">
             <input type="text" placeholder="Имя" />
             <input type="number" placeholder="Номер телефона" />
-            <input class="formDropInput" type="text" placeholder="Тип услуги" />
+            <div class="formDropInput__wrap">
+              <input
+                class="formDropInput"
+                type="text"
+                placeholder="Тип услуги"
+              />
+              <img class="dropIcon" src="img/inputArrDown.svg" alt="" />
+            </div>
             <input type="date" placeholder="Дата" />
             <input
               class="formSubmit"
@@ -1055,6 +1077,36 @@
         </div>
       </div>
     </div>
+    <div class="mobilNav">
+      <div class="mobilNav__wrap">
+        <div class="mobilNav__logo">
+          <img src="img/logoColor.svg" alt="" />
+        </div>
+        <div class="mobilNav__sn">
+          <a href="#">
+            <img src="img/instRed.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="img/fbRed.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="img/vkRed.svg" alt="" />
+          </a>
+        </div>
+        <div class="mobilNav__nav">
+          <ul>
+            <li>Услуги</li>
+            <li>Акции</li>
+            <li>Портфолио</li>
+            <li>Отзывы</li>
+            <li class="mobilFeedackBTN">Связаться с нами</li>
+          </ul>
+        </div>
+        <div class="mobilNav__close">
+          <img class="mobilNav__closeIcon" src="img/formClose.svg" alt="" />
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script
       type="text/javascript"
@@ -1066,5 +1118,6 @@
     <script src="js/portfolio.js"></script>
     <script src="js/instagram.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/mobilNav.js"></script>
   </body>
 </html>
